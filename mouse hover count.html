@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Mouse hover count</title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-app="">
+
+    <div ng-mouseover="count = count + 1" ng-init="count=0">Mouse over me!</div>
+
+    <h1>{{count}}</h1>
+
+    <p>This example will increase the value of the variable "count" every time the mouse cursor moves over the DIV element.</p>
+
+</body>
+</html>
